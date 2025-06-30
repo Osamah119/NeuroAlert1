@@ -18,7 +18,7 @@ import {
   Clock, 
   Brain, 
   Heart,
-  AlertTriangle,
+  AlertCircle,
   CheckCircle,
   FileText,
   Settings
@@ -337,7 +337,7 @@ export default function SessionPage() {
                                 'bg-red-100 text-red-800'
                               }>
                                 {latest.label === 'normal' && <CheckCircle className="h-4 w-4 mr-1" />}
-                                {latest.label !== 'normal' && <AlertTriangle className="h-4 w-4 mr-1" />}
+                                {latest.label !== 'normal' && <AlertCircle className="h-4 w-4 mr-1" />}
                                 {t(`health.${latest.label}`)}
                               </Badge>
                             </div>
