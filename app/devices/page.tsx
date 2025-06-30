@@ -17,7 +17,7 @@ import {
   Activity, 
   Settings, 
   CheckCircle, 
-  AlertTriangle, 
+  AlertCircle,
   RefreshCw,
   Zap,
   Signal,
@@ -246,7 +246,7 @@ export default function DevicesPage() {
           <Card>
             <CardContent className="p-6">
               <div className="flex items-center gap-3">
-                <AlertTriangle className="h-8 w-8 text-yellow-600" />
+                <AlertCircle className="h-8 w-8 text-yellow-600" />
                 <div>
                   <div className="text-2xl font-bold text-gray-900 dark:text-white">
                     {devices.filter(d => d.status === 'disconnected').length}
